@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.grater-container {
+  width: 640px;
+  margin: 0 auto; }
+  @media all and (max-width: 660px) {
+    .grater-container {
+      width: 300px; } }
+
+.grater {
+  zoom: 1; }
+  .grater > div {
+    width: 300px;
+    margin: 0 0 2em; }
+    .grater > div:first-child {
+      float: left; }
+    .grater > div:last-child {
+      float: right; }
+  .grater.reverse > div:first-child {
+    float: right; }
+  .grater.reverse > div:last-child {
+    float: left; }
+  .grater:before, .grater:after {
+    content: "";
+    display: table; }
+  .grater:after {
+    clear: both; }
+  @media all and (max-width: 660px) {
+    .grater {
+      margin-bottom: 1em; }
+      .grater > div {
+        float: none !important;
+        margin: 0 auto 2em; } }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+::selection {
+  color: #fff;
+  background: #ff5e3a; }
+
+body {
+  font: 20px "Avenir LT W01 65 Medium", "HelveticaNeue", Helvetica, sans-serif;
+  color: #555;
+  line-height: 1.4em; }
+
+p, ul {
+  margin-bottom: 1.4em; }
+
+p.disclaimer {
+  color: #c3c3c3;
+  font-size: 0.8em; }
+  p.disclaimer a {
+    color: #c3c3c3; }
+    p.disclaimer a:hover {
+      color: #67a7f7; }
+
+strong {
+  font-family: "Avenir LT W01 85 Heavy", "HelveticaNeue-Bold", Helvetica, sans-serif; }
+
+span.asterisk {
+  color: #c3c3c3; }
+
+a {
+  color: #67a7f7;
+  text-decoration: none; }
+
+mark {
+  background-color: #fdffb6;
+  padding: 2px;
+  box-shadow: #fdffb6 0 0 5px; }
+
+code {
+  font-family: Courier, monospace; }
+
+ul.list {
+  padding-left: 1.4em; }
+  ul.list li {
+    list-style: disc; }
+
+h3 {
+  font-family: "Avenir LT W01 85 Heavy", "HelveticaNeue-Bold", Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+h4 {
+  font-family: "Avenir LT W01 85 Heavy", "HelveticaNeue-Bold", Helvetica, sans-serif;
+  font-size: 22px;
+  color: #999; }
+
+body > header {
+  background-color: #ff9500;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9500), color-stop(100%, #ff5e3a));
+  background-image: -webkit-linear-gradient(#ff9500, #ff5e3a);
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  color: #fff;
+  padding: 50px 0;
+  margin-bottom: 50px; }
+  body > header h1 {
+    margin-top: 1.2em; }
+  body > header h2 {
+    margin-bottom: 20px; }
+  body > header p {
+    margin: 0; }
+  body > header a.icon {
+    display: block;
+    width: 280px;
+    height: 280px; }
+    body > header a.icon img {
+      width: 100%;
+      height: 100%; }
+  body > header div.grater, body > header div.grater div {
+    margin-bottom: 0; }
+  body > header p {
+    margin-bottom: 0; }
+  @media all and (max-width: 660px) {
+    body > header {
+      text-align: center;
+      padding: 20px 0 20px; }
+      body > header a.icon {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1em; }
+      body > header h1 {
+        margin-top: 0; }
+      body > header h2 {
+        font-size: 20px; } }
+
+h1 {
+  font: 50px "Avenir LT W01 85 Heavy", "HelveticaNeue-Bold", Helvetica, sans-serif; }
+  h1 a {
+    color: #fff;
+    text-decoration: none; }
+
+h2 {
+  font: 30px "Avenir LT W01 35 Light", "HelveticaNeue-Light", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.5); }
+
+body > footer {
+  width: 640px;
+  margin: 0 auto;
+  padding: 1em 0;
+  color: #c3c3c3;
+  font: 18px "Avenir LT W01 35 Light", "HelveticaNeue-Light", Helvetica, sans-serif; }
+  body > footer a {
+    color: #c3c3c3; }
+    body > footer a:hover {
+      color: #67a7f7; }
+  body > footer ul {
+    float: right;
+    text-align: right; }
+  body > footer li {
+    float: left;
+    margin-left: 1em;
+    display: inline-block; }
+  @media all and (max-width: 660px) {
+    body > footer {
+      text-align: center;
+      padding-bottom: 0; }
+      body > footer li {
+        float: none;
+        display: inline; }
+        body > footer li:first-child {
+          margin-left: 0; }
+      body > footer ul {
+        float: none;
+        text-align: center;
+        width: 100%; } }
+
+@media all and (max-width: 660px) {
+  footer.grater > div {
+    margin-bottom: 0.5em; } }
+div.iphone {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(/assets/iphone.svg) no-repeat;
+  background-size: 387px 804px;
+  width: 387px;
+  height: 804px;
+  padding: 121px 0 0 36px; }
+  div.iphone div, div.iphone img {
+    background: #000;
+    width: 320px;
+    height: 568px;
+    overflow: hidden; }
+  @media all and (max-width: 660px) {
+    div.iphone {
+      display: none; } }
+
+ul.press-coverage {
+  margin-top: 4em;
+  font-size: 0.9em; }
+  ul.press-coverage li {
+    margin-bottom: 4em; }
+
+blockquote {
+  border-left: 5px solid #eee;
+  color: #888;
+  margin: 0 0 1em;
+  padding-left: 1em; }
+
+a.app-store {
+  width: 186px;
+  height: 55px;
+  display: inline-block; }
+  a.app-store img {
+    width: 100%;
+    height: 100%; }
+
+@media all and (max-width: 660px) {
+  p.app-store {
+    text-align: center; } }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ page.title }}</title>
+  <title>App Name - Support</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/96f84b1d-e391-4ec6-a269-bce4c09cfb3a.css">
   <link rel="stylesheet" href="/assets/application.css">
@@ -12,33 +12,36 @@
   <header>
     <div class="grater grater-container">
       <div>
-        <a class="icon" href="{{ site.appstore_url }}" rel="external nofollow"><img src="/assets/icon.svg"></a>
+        <a class="icon" href="https://itunes.apple.com/app/id123456789" rel="external nofollow"><img src="/assets/icon.svg"></a>
       </div>
       <div>
-        <h1><a href="/" rel="home">{{ site.name }}</a></h1>
-        <h2>{{ site.tagline }}</h2>
-        <p>{{ site.appstore_white }}</p>
+        <h1><a href="/" rel="home">App Name</a></h1>
+        <h2>A great app to do something</h2>
+        <p><a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/assets/app-store-white.svg" alt="Download on the App Store"></a></p>
       </div>
     </div>
   </header>
   <div class="grater grater-container">
-    {{ content }}
+    <h3>Support</h3>
+
+<h4>My question wasn&#39;t answered. Help!</h4>
+
+<p>Just <a href="mailto:support@appname.com">email us</a> and we&#39;ll get you taken care of!</p>
+
   </div>
   <footer class="grater grater-container">
     <div>
-      &copy; 2014 <a href="{{ site.company_website }}" rel="external nofollow">{{ site.company }} Inc.</a>
+      &copy; 2014 <a href="http://companyname.com" rel="external nofollow">Company Name Inc.</a>
     </div>
     <div>
       <ul>
         <li><a href="/support">Support</a></li>
-        <li><a href="mailto:{{ site.email_contact }}">Contact</a></li>
+        <li><a href="mailto:contact@appname.com">Contact</a></li>
         <li><a href="/press">Press</a></li>
       </ul>
     </div>
   </footer>
   <script src="/assets/srcset.min.js"></script>
-  {% for js in page.js %}
-    <script src="{{ js }}"></script>
-  {% endfor %}
+  
 </body>
 </html>
