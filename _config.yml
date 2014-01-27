@@ -1,0 +1,23 @@
+# General
+name: App Name
+markdown: redcarpet
+tagline: A great app to do something
+
+# App Store
+appstore_url: https://itunes.apple.com/app/id123456789
+appstore: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/assets/app-store.svg" alt="Download on the App Store"></a>
+appstore_white: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/assets/app-store-white.svg" alt="Download on the App Store"></a>
+
+# Screenshots
+screenshots:
+- screenshot01
+- screenshot02
+
+# Company Info
+company: Company Name
+company_website: http://companyname.com
+
+# Emails
+email_press: press@appname.com
+email_contact: contact@appname.com
+email_support: support@appname.com

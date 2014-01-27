@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/96f84b1d-e391-4ec6-a269-bce4c09cfb3a.css">
+  <link rel="stylesheet" href="/assets/application.css">
+</head>
+<body>
+  <header>
+    <div class="grater grater-container">
+      <div>
+        <a class="icon" href="{{ site.appstore_url }}" rel="external nofollow"><img src="/assets/icon.svg"></a>
+      </div>
+      <div>
+        <h1><a href="/" rel="home">{{ site.name }}</a></h1>
+        <h2>{{ site.tagline }}</h2>
+        <p>{{ site.appstore_white }}</p>
+      </div>
+    </div>
+  </header>
+  <div class="grater grater-container">
+    {{ content }}
+  </div>
+  <footer class="grater grater-container">
+    <div>
+      &copy; 2014 <a href="{{ site.company_website }}" rel="external nofollow">{{ site.company }} Inc.</a>
+    </div>
+    <div>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="mailto:{{ site.email_contact }}">Contact</a></li>
+        <li><a href="/press">Press</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/assets/srcset.min.js"></script>
+  {% for js in page.js %}
+    <script src="{{ js }}"></script>
+  {% endfor %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+div.iphone {
+  @include box-sizing(border-box);
+  background: url(/assets/iphone.svg) no-repeat;
+  background-size: 387px 804px;
+  width: 387px;
+  height: 804px;
+  padding: 121px 0 0 36px;
+
+  div, img {
+    background: #000;
+    width: 320px;
+    height: 568px;
+    overflow: hidden;
+  }
+
+  @media #{$grater-small-media-query} {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div>
+  {{ content }}
+</div>
+<div>
+  <div class="iphone">
+    <div id="screenshots">
+      {% for screenshot in site.screenshots %}
+        <img alt="{{ site.name }} Screenshot" src="/assets/{{ screenshot }}.png" srcset="/assets/{{ screenshot }}@2x.png 2x" width="320" heigh="568">
+      {% endfor %}
+    </div>
+  </div>
+</div>
