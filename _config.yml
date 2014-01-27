@@ -1,7 +1,10 @@
 # General
 name: App Name
-markdown: redcarpet
 tagline: A great app to do something
+
+# Jekyll
+exclude: Rakefile
+markdown: redcarpet
 
 # App Store
 appstore_url: https://itunes.apple.com/app/id123456789
