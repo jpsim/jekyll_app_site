@@ -219,7 +219,7 @@ div.iphone {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(/assets/iphone.svg) no-repeat;
+  background: url(/jekyll_app_site/assets/iphone.svg) no-repeat;
   background-size: 387px 804px;
   width: 387px;
   height: 804px;
