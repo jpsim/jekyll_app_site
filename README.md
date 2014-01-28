@@ -1,6 +1,6 @@
 # Jekyll App Site
 
-The Jekyll App Site is a small Jekyll template to present an iPhone app with a static site. [Demo](http://jpsim.github.io/jekyll_app_site)
+The Jekyll App Site is a small Jekyll template to present an iPhone app with a static site. [Demo](http://jpsim.com/jekyll_app_site)
 
 ## Running Locally
 
