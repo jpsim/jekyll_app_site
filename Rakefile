@@ -5,10 +5,8 @@ end
 
 desc "compile and run the site"
 task :serve do
+  Rake::Task["rsync"].invoke
   pids = [
-    spawn("rsync _assets/images/* assets"),
-    spawn("rsync _assets/javascripts/* assets"),
-    spawn("rsync _vendor/assets/javascripts/* assets"),
     spawn("scss --watch _assets/stylesheets/application.scss:assets/application.css"),
     spawn("jekyll serve --watch")
   ]
@@ -25,11 +23,18 @@ end
 
 desc "compile the site"
 task :build do
+  Rake::Task["rsync"].invoke
+  `scss _assets/stylesheets/application.scss:assets/application.css`
+  `jekyll build`
+end
+
+desc "common rsync used in build and serve tasks"
+task :rsync do
+  FileUtils.mkdir('_site')
+  FileUtils.mkdir('assets')
   `rsync _assets/images/* assets`
   `rsync _assets/javascripts/* assets`
   `rsync _vendor/assets/javascripts/* assets`
-  `scss _assets/stylesheets/application.scss:assets/application.css`
-  `jekyll build`
 end
 
 desc "clean the site"
