@@ -3,7 +3,7 @@ name: App Name
 tagline: A great app to do something
 
 # Jekyll
-exclude: Rakefile
+exclude: ['Rakefile']
 markdown: redcarpet
 
 # App Store
